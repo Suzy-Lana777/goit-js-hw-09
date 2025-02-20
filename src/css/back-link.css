@@ -1,4 +1,11 @@
-.back-link {
+/* .back-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
   position: relative;
   display: inline-block;
   padding: 4px 8px;
@@ -26,4 +33,4 @@
 .back-link:hover::before {
   opacity: 1;
   animation-play-state: running;
-}
+} */

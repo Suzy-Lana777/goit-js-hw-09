@@ -68,8 +68,6 @@ const images = [
 import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
-const lightbox = new SimpleLightbox('.gallery a', { /* options */ });
-
 
 const refs = document.querySelector(".gallery");
 
@@ -89,29 +87,13 @@ function imageTemplate(item) {
 
 function imagesTemplate(items) {
   return items.map(imageTemplate).join('');
-  
 }
 
 const markup = imagesTemplate(images);
-refs.insertAdjacentHTML("afterbegin", markup);
+refs.insertAdjacentHTML('afterbegin', markup);
 
-const container = document.querySelector(".gallery");
-
-container.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    if (e.target === e.currentTarget) return;
-
-    //   const modalWindowImg = basicLightbox.create(
-    //     `<img
-    //     src="${e.target.dataset.source}"
-    //     width="1112"
-    //     height="640"
-    //   />`
-    //   );
-
-    // modalWindowImg.show()
-});
+const lightbox = new SimpleLightbox(`.gallery a`, {captionsData: `alt`, captionDelay: 250});
     
-new SimpleLightbox(`.gallery a`, {captionsData: `alt`, captionDelay: 250});
+// const bodyGallery = (document.querySelector('body').style.backgroundColor =
+//   'white');
     
