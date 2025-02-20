@@ -94,6 +94,5 @@ refs.insertAdjacentHTML('afterbegin', markup);
 
 const lightbox = new SimpleLightbox(`.gallery a`, {captionsData: `alt`, captionDelay: 250});
     
-// const bodyGallery = (document.querySelector('body').style.backgroundColor =
-//   'white');
+
     
